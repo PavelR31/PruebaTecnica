@@ -46,11 +46,11 @@ Prueba Técnica es una aplicación desarrollada en Laravel. Este documento propo
 
 1. **Renombra el archivo `.env.example` a `.env`**.
 
-2. **Instala las dependencias de PHP y genera la clave de la aplicación**:
+2. **Instala las dependencias de PHP**:
     ```bash
     composer install
     ```
-3.**Genera la clave de la aplicación**:
+3. **Genera la clave de la aplicación**:
     ```bash
     php artisan key:generate
     ```
