@@ -17,7 +17,7 @@ Prueba Técnica es una aplicación desarrollada en Laravel. Este documento propo
 
 1. **Accede al directorio de scripts**:
     ```bash
-    cd /scripts
+    cd scripts
     ```
 
 2. **Crea un entorno virtual**:
