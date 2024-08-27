@@ -49,7 +49,6 @@ Prueba Técnica es una aplicación desarrollada en Laravel. Este documento propo
 2. **Instala las dependencias de PHP y genera la clave de la aplicación**:
     ```bash
     composer install
-   
     ```
 3.**Genera la clave de la aplicación**:
     ```bash
