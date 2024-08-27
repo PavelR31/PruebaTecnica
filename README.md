@@ -52,9 +52,8 @@ Prueba Técnica es una aplicación desarrollada en Laravel. Este documento propo
    
     ```
 3.**Genera la clave de la aplicación**:
-     ```bash
+    ```bash
     php artisan key:generate
-   
     ```
 4. **Instala las dependencias de Node.js**:
     ```bash
