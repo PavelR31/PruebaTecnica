@@ -17,17 +17,16 @@ def configurar_credenciales():
     credenciales_path = os.path.join(script_dir, 'credenciales.json')
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credenciales_path
 
-from selenium.common.exceptions import StaleElementReferenceException
-
 def obtener_contenido_completo_url(url):
     try:
-        
+        # Configura las opciones del navegador
         opts = Options()
         opts.add_argument("user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36")
+        opts.add_argument("--headless")
         opts.add_argument("--no-sandbox")
         opts.add_argument("--disable-dev-shm-usage")
 
-      #incia chrome
+        # Inicia el driver de Chrome
         driver = webdriver.Chrome(
             service=Service(ChromeDriverManager().install()),
             options=opts
@@ -36,26 +35,18 @@ def obtener_contenido_completo_url(url):
         # Abre la URL
         driver.get(url)
 
-        # Carga de contenido dinamico
+      
         WebDriverWait(driver, 30).until(
             EC.presence_of_all_elements_located((By.XPATH, "//*[self::p or self::div or self::article or self::span or self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6]"))
         )
+        body = driver.find_element(By.TAG_NAME, 'body')
+        body.send_keys(Keys.PAGE_DOWN)
+        sleep(2)
 
+        elementos_texto = driver.find_elements(By.XPATH, "//*[self::p or self::div or self::article or self::span or self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6]")
         
-        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        sleep(2)  
-
-      
-        def obtener_texto():
-            try:
-                # Encuentra todos los elementos de texto relevantes en la página
-                elementos_texto = driver.find_elements(By.XPATH, "//*[self::p or self::div or self::article or self::span or self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6]")
-                return " ".join([element.text for element in elementos_texto])
-            except StaleElementReferenceException:
-                # Si se produce una excepción, intenta de nuevo
-                return obtener_texto()
-
-        contenido_texto = obtener_texto()
+        # Extrae el texto de los elementos encontrados
+        contenido_texto = " ".join([element.text for element in elementos_texto])
 
         driver.quit()
 
@@ -64,6 +55,7 @@ def obtener_contenido_completo_url(url):
         if 'driver' in locals():
             driver.quit()
         raise RuntimeError(f"Error al obtener contenido de la URL con Selenium: {e}")
+
 
 
 def analizar_entidades(contenido_texto, cliente):
