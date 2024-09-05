@@ -17,7 +17,7 @@ Prueba Técnica es una aplicación desarrollada en Laravel. Este documento propo
 
 1. **Accede al directorio de scripts**:
     ```bash
-    cd /scripts
+    cd scripts
     ```
 
 2. **Crea un entorno virtual**:
@@ -46,13 +46,15 @@ Prueba Técnica es una aplicación desarrollada en Laravel. Este documento propo
 
 1. **Renombra el archivo `.env.example` a `.env`**.
 
-2. **Instala las dependencias de PHP y genera la clave de la aplicación**:
+2. **Instala las dependencias de PHP**:
     ```bash
-    php artisan key:generate
     composer install
     ```
-
-3. **Instala las dependencias de Node.js**:
+3. **Genera la clave de la aplicación**:
+    ```bash
+    php artisan key:generate
+    ```
+4. **Instala las dependencias de Node.js**:
     ```bash
     npm install
     ```

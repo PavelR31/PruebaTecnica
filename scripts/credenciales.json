@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "mythic-benefit-433714-s7",
+  "private_key_id": "78e6091a691a5c8d4feba78becf4abff4b5c2a2a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCWvgGXFrUEHHLi\nEkpmBZweEvCujrGbyYXIUn4Ey71RV5dDSOI+07uCcTpd4VxbOTEMpv+8QkKKZGlX\nRy2pEXRBiK5bewVbqzz4Hlwfydj1VpkhNr6EtHsZ6Kl1VBkZsO6yOh6Z/B2cUSTj\naEJFo65g6ruLGPM8N6dip8QeUfUt+ymjHfZxhIuxGuWAZaNxAtqti1PSMMDU1I/p\nxw6J2VHwUTMn1+X+hvh6X/bgL5fzlgu3wuOXFs7Akzpf5Q0qCf7dBfmBaxNUhmbq\nB5J087Cjft/6xbXj0ftUilFt8ML1OdO/KcnHpdmDUaCIuX97AQYfLSMaWDnByvyw\ndBep+fujAgMBAAECggEABSNw9m+FuCAoImCxPI0QZ04J+klO8JqL/uog9ZTkXTN5\nKof/fljFWYr2jGC0Pz/R1jaTHR29Gu6VUK5SdiLsLZe1KdUlt5w8tdCDH2pIBQTw\nr1soX2mvkJCHxkIZoPCREm48wM8BS2TQtxfEuo770L3vqqwtDm5vPEOvwcDVdL2/\npr7MKTCmRux2/Ajxcukm2MCQt9mZg7zqFUNUUWOFmnvS5ixYDsDJmysFf7YWoJ/5\nVqbd8I9yDhZY2ojR34pVZyQmXkEmnjyfGNEZomI4hdpzpF37WCn40v51t2BYwtOG\nUvpTxOI28WewrZP5rFY4ACJgmfFXI6A/L1N/K7otYQKBgQDHFB9gEXgLR9FIMwik\nPvnFj7xgCbrk0dare90rCg/OFg2i4jOe8yuWxA3AoXRC8tN6Gkzi4SmLP10e/JeF\nmsAUrMEYVLZ/rYhMfY2FzN4XFS80BAIOOB4Xo1igQueOI/cuWTrP2qPww/Ys7A9l\nsHqMiI3iNGDQos9vid1icmVGGQKBgQDB19LwN56NwMBXzUHIb9jAjt048w1seW5x\nW6VpCCu4yzQMuFIz5XHM+dvgN3H0NHyr5lF+mVleX3mb3B71TFfJeajcUL4aQRee\nf7SrT91YdXKQ04NJdXbQGcjfe3kIc0L4/kRgdkqUrhiFHSmdFBstdVjPL4qnHpg4\noVqauHUvGwKBgBDGH0am8ihxKq8crbO5Iq6Ex+iHqVmyXJYiX6ZKuL4ymX+J87OG\n5btUVZxPfk5Ny4fUQ3oyYp+6/QupWNMHEPws+jAkoyPq6TsYsR3+/w+O12VYmRu9\nmrt/Je6K9JvDaAZduljdIUceG9X5Jer5jbndn6bZpvatYTESuraa0PGxAoGBALEz\n4oJ05f4CEhNx8UwRax2EvJleH4xlaeA4/nqI3Kc/I+Lo8US94I2YcDeFmCe9f6cJ\nksBf4YHTV/Fyhd6Knsnw7LwTF+YaUUQ0zG27Qcam/0eEBEW4GxhcKfSbBGcEL1o9\n3zYrjTxj9shhg3Q0ODATUU99z4u8/TzvzEsaiw23AoGAL9Z8uQ74cUgucYzgmE8m\nWJ5IqjVEHrMiXheDXhakE8BnNe3VOeDY8agMVS61oc05BUYffpRfZ63Oo3j1R7j9\n74xrdt2kYPl7b/iJmbKhpUuPNqTf017F5bn+sILE4BlqGuLz850NltozB8tqDsdr\nggMHjgsvdgPiD+XKpeVugY8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "api-16@mythic-benefit-433714-s7.iam.gserviceaccount.com",
+  "client_id": "117445948748300350682",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/api-16%40mythic-benefit-433714-s7.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
